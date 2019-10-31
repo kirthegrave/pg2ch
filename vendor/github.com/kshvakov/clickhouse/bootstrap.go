@@ -81,7 +81,7 @@ func open(dsn string) (*clickhouse, error) {
 		database         = query.Get("database")
 		username         = query.Get("username")
 		password         = query.Get("password")
-		blockSize        = 1000000
+		blockSize        = 100000
 		readTimeout      = DefaultReadTimeout
 		writeTimeout     = DefaultWriteTimeout
 		connOpenStrategy = connOpenRandom
